@@ -29,7 +29,7 @@
     <h3>Heading 3</h3>
     <h4>Heading 4</h4>
     <h5>Heading 5</h5>
-    <h6>Heading 6</h6>
+    <h6 class="h1">Heading 6</h6>
     <hr>
     <br>
 
@@ -37,12 +37,12 @@
     <h3 class="text-primary">Display</h3>
     <p>Digunakan Pada Headline. <b>class="display-1 sd display-6" : </b></p>
     <p></p>
-    <h1>Display-1</h1>
+    <h1 class="display-1">Display-1</h1>
     <p>Display-2</p>
     <p>Display-3</p>
     <p>Display-4</p>
     <p>Display-5</p>
-    <p>Display-6</p>
+    <p class="display-3">Display-6</p>
     <hr>
     <br>
 
@@ -51,7 +51,7 @@
     <p>Menonjokan Paragraf
     <b>class="lead"</b></p>
 
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur commodi dolorem doloremque harum illo ipsum labore pariatur quis sapiente, tempore! Cum, nobis numquam quam quibusdam tempora totam ut voluptas voluptatibus.</p>
+    <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur commodi dolorem doloremque harum illo ipsum labore pariatur quis sapiente, tempore! Cum, nobis numquam quam quibusdam tempora totam ut voluptas voluptatibus.</p>
 
     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A adipisci alias amet debitis dignissimos, dolor eius eum, incidunt magni odit qui quis ratione recusandae tenetur voluptas. In ipsum tempora tenetur!</p>
 
@@ -63,7 +63,7 @@
     <p>memberi kesan text Bisu/ non Aktif <b>class="text-muted"</b></p>
 
     <p>Ini adalah text biasa</p>
-    <p>dan ini adalah text Muted</p>
+    <p class="text-muted">dan ini adalah text Muted</p>
     <hr>
     <br>
 
@@ -72,15 +72,15 @@
     <h3 class="text-primary">Font Style</h3>
     <p>Pengaturan Font</p>
 
-    <p>Text tebal (font-weight-bold)</p>
-    <p>text Normal (font-weight-normal)</p>
-    <h1>Hallo</h1>
-    <p>Light/ Tipis weight text.</p>
-    <p>text italic (font-italic)</p>
-    <p>LOWERCASE (text-lowercase)</p>
-    <P>upercase (text-uppercase)</P>
-    <p>capitalize (text-capitalize)</p>
-    <p>This is in monospace</p>
+    <p class="fw-bold">Text tebal (font-weight-bold)</p>
+    <p class="fw-normal">text Normal (font-weight-normal)</p>
+    <h1 class="fw-normal">Hallo</h1>
+    <p class="fw-light">Light/ Tipis weight text.</p>
+    <p class="fst-italic">text italic (font-italic)</p>
+    <p class="text-lowercase">LOWERCASE (text-lowercase)</p>
+    <p class="text-uppercase">upercase (text-uppercase)</p>
+    <p class="text-capitalize">capitalize (text-capitalize)</p>
+    <p class="font-monospace">This is in monospace</p>
 
     <hr>
     <br>
@@ -88,15 +88,29 @@
     <h3 class="text-primary">Text Decoration</h3>
     <p>memberi dekorasi pada text</p>
 
-    <p>This text has a line underneath it.</p>
-    <p>This text has a line going through it.</p>
-    <a href="#">This link has its text decoration removed</a>
+    <p class="text-decoration-underline">This text has a line underneath it.</p>
+    <p class="text-decoration-line-through">This text has a line going through it.</p>
+    <a href="#" class="text-decoration-none">This link has its text decoration removed</a>
     <hr>
     <br>
 
     <!-- 7. membuat Blockquuote -->
     <h3 class="text-primary">Blockquote</h3>
     <p>Digunakan untuk menulis kutipan ataupun sejenisnya</p>
+
+    <blockquote class="blockquote">
+        <p>Ini adalah hari Kamis</p>
+    </blockquote>
+
+    <figure class="text-end">
+        <blockquote class="blockquote">
+            <p>Kamu adalah Napas Ku</p>
+        </blockquote>
+        <figcaption class="blockquote-footer">
+            dikutip dari <cite>Tong Sampah</cite>
+        </figcaption>
+    </figure>
+
 
     <hr>
     <br>
@@ -106,10 +120,12 @@
     <h3 class="text-primary">text-Truncate</h3>
     <p>Berfungsi untuk memangkas tulisan <b>Example : </b></p>
 
+    <p class="text-truncate"><span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias, commodi cum, deserunt dignissimos, eius eligendi incidunt laudantium minima natus odit omnis optio pariatur qui quis quisquam quos ratione suscipit veniam.</span><span>Aut consequuntur culpa fugit nisi numquam possimus quaerat quidem quo, repudiandae ullam. Ab adipisci aliquid culpa delectus dolores doloribus eaque labore maiores minus, necessitatibus nobis porro, quaerat repudiandae sequi voluptatem.</span><span>Accusantium in magni modi soluta. Architecto assumenda atque consequuntur esse exercitationem mollitia officia quos, repudiandae voluptatum. Impedit nemo obcaecati pariatur placeat sit. Culpa delectus eligendi est maiores molestias non quam!</span><span>Accusamus ad aliquam aspernatur commodi, distinctio doloribus facilis mollitia tempore vel? Cum debitis deserunt earum error, in itaque magnam molestiae pariatur possimus quidem quos rem, sed voluptatum! Sapiente sed, voluptatibus.</span><span>Deserunt dolorem enim laborum nobis nostrum perspiciatis praesentium qui? Assumenda dignissimos dolor ducimus enim explicabo ipsum nihil, nostrum nulla quasi quis, quo veritatis vitae voluptatibus? Incidunt nemo porro quia unde!</span></p>
+
     <h3 class="text-primary">Style & Unstyle</h3>
     <p>menghilangkan style <b>Example : </b></p>
 
-    <ul>
+    <ul class="list-unstyle">
         <li>Agus</li>
         <li>Adel</li>
         <li>Firman</li>
@@ -118,7 +134,7 @@
     <p>Tinggal kasih class list-unstyled maka <b>Maka hasilnya : </b></p>
 
 
-    <ul>
+    <ul class="list-unstyled">
         <li>Agus</li>
         <li>Adel</li>
         <li>Firman</li>
@@ -137,10 +153,10 @@
 
     <b>menjadi : </b>
     <p>beri class pada itemnya (list-inline-item)</p>
-    <ul>
-        <li>Agus</li>
-        <li>Adel</li>
-        <li>Firman</li>
+    <ul class="list-inline">
+        <li class="list-inline-item">Agus</li>
+        <li class="list-inline-item">Adel</li>
+        <li class="list-inline-item">Firman</li>
     </ul>
 
 
